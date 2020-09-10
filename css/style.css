@@ -6,3 +6,106 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+
+
+/* Basic Reset, the star is the univeral */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size-adjust: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 30px;
+}
+
+.header {
+    height: 95vh; /* vh = viewport height and the 95 is like % */ 
+    background-image: linear-gradient(to right bottom, #7ed56fcc,#28b485cc), url(../img/hero.jpg); /* to have multiple backgrounds use commmas */
+    background-size: cover; /* whatever width it will try to fit in the box */
+    background-position: top; /* ensures that the image always stays at the top of the container */
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100% ); /* Starts from top right and goes clockwise. x y per each comma, you can remove or add commas to make different polygons */
+}
+
+.logo-box {
+    position: absolute; /* the parent is header which is the position: relative */
+    top: 40px; /* its 40px becuase of the 30px border and then 10px padding almost */
+    left: 40px;
+}
+
+.logo {
+    height: 35px;
+}
+
+.text-box {
+    position: absolute;
+    top: 40%; /* these are in relation to the parent element */ 
+    left: 50%;
+    transform: translate(-50%, -50%); /* these are in relation to the element so it takes - half of the height/width which then centers it */
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden; /* used if your animations have a shake or something */
+}
+
+.heading-primary-main {
+    display: block; /* seprates the spans */ 
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    /* other animation things you can do: 
+    animation-delay: 3s: delays when the animation starts
+    animation-iteration-count: 3; how many times it plays the animation
+    */
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+    animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
