@@ -1,0 +1,16 @@
+// Basic Reset, the star is the univeral
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; /* 1 rem = 10px = 62.5% having a percentage is easier for peolpe to adjust for poor eyesite */ 
+}
+
+body {
+    box-sizing: border-box; /* supposed to help make our lives easier */ 
+}
