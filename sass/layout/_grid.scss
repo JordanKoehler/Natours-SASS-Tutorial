@@ -1,6 +1,5 @@
 .row {
     max-width: $grid-width; //the standard is 1140px but remember rem
-    background-color: #eee; 
     margin: 0 auto; //trick to center blocks inside blocks 
 
     &:not(:last-child){  //does the exact opposite, so grabs everything except the last child
@@ -10,10 +9,8 @@
     @include clearfix;
 
     [class^="col-"] {// the ^ just wants the beginning of the class name, use $ which is for the end
-        background-color: orangered;
         float: left;
         height: 4rem;
-        color: $color-white;
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
