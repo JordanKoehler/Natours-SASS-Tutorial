@@ -10,7 +10,7 @@
 
     [class^="col-"] {// the ^ just wants the beginning of the class name, use $ which is for the end
         float: left;
-        height: 4rem;
+        // height: 4rem;
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;

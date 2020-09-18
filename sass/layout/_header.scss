@@ -8,12 +8,13 @@
     background-size: cover; /* whatever width it will try to fit in the box */
     background-position: top; /* ensures that the image always stays at the top of the container */
     position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100% );
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100% ); /* Starts from top right and goes clockwise. x y per each comma, you can remove or add commas to make different polygons */
 
     &__logo-box {
         position: absolute; /* the parent is header which is the position: relative */
-    top: 4rem; /* its 40px becuase of the 30px border and then 10px padding almost */
-    left: 4rem;
+        top: 4rem; /* its 40px becuase of the 30px border and then 10px padding almost */
+        left: 4rem;
     }
 
     &__logo {
