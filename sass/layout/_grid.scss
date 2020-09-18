@@ -2,7 +2,7 @@
     max-width: $grid-width; //the standard is 1140px but remember rem
     margin: 0 auto; //trick to center blocks inside blocks 
 
-    &:not(:last-child){  //does the exact opposite, so grabs everything except the last child
+    &:not(:last-child) {  //does the exact opposite, so grabs everything except the last child
         margin-bottom: $gutter-vertical;
     }
    
