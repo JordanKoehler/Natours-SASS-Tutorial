@@ -11,6 +11,11 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100% );
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100% ); /* Starts from top right and goes clockwise. x y per each comma, you can remove or add commas to make different polygons */
 
+    @include respond(phone) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100% );
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100% );
+    }
+
     &__logo-box {
         position: absolute; /* the parent is header which is the position: relative */
         top: 4rem; /* its 40px becuase of the 30px border and then 10px padding almost */
