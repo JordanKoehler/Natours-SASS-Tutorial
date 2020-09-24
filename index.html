@@ -69,9 +69,31 @@
 
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+
+                        <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                            alt="Photo 1"
+                            class="composition__photo composition__photo--p1"
+                            src="img/nat-1-large.jpg"> 
+                            <!-- Width discriptors are used here which you grab from the actual image
+                            sizes is the view port widths so the size of the image 171/900 = ~ 0.20% so therefore 20vw, the last 300 is default
+                            always use alt if the image doesn't load, classes stay the same and src if the web browser doesn't support srcset-->
+
+                        <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                            alt="Photo 2"
+                            class="composition__photo composition__photo--p2"
+                            src="img/nat-2-large.jpg">
+
+                        <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                            alt="Photo 3"
+                            class="composition__photo composition__photo--p3"
+                            src="img/nat-3-large.jpg">
+
+                        <!-- <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
                         <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                        <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                        <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3"> -->
                     </div>
                 </div>
             </div>
@@ -330,7 +352,16 @@
 
     <footer class="footer">
         <div class="footer__logo-box">
-            <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+
+            <!-- Art Direction method for using smaller images for difference screens-->
+            <picture class="footer__logo">
+                <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" 
+                    media="(max-width: 37.5rem)"
+                    src="img/logo-green-2x.png">
+                <img srcset="img/logo-green-1x.png 1x,img/logo-green-2x.png 2x" alt="Full logo" class="footer__logo">
+            </picture>
+
+            <!-- <img srcset="img/logo-green-1x.png 1x,img/logo-green-2x.png 2x" alt="Full logo" class="footer__logo"> density switcher is using the src set and then 1x for low density and 2x for high -->
         </div>
         <div class="row">
             <div class="col-1-of-2">
@@ -355,8 +386,20 @@
     <div class="popup" id="popup">
         <div class="popup__content">
             <div class="popup__left">
-                <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
-                <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+
+                <img srcset="img/nat-8.jpg 2000w"
+                    sizes="(max-width:900px) 20vw, (max-width: 600px) 30vw, 300px"
+                    alt="Tour Photo"
+                    class="popup__img"
+                    src="img/nat-8.jpg">
+
+                <img srcset="img/nat-9.jpg 2000w"
+                    sizes="(max-width:900px) 20vw, (max-width: 600px) 30vw, 300px"
+                    alt="Tour Photo"
+                    class="popup__img"
+                    src="img/nat-9.jpg">
+                <!-- <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img"> -->
             </div>
             <div class="popup__right">
                 <a href="#section-tours" class="popup__close">&times;</a>
