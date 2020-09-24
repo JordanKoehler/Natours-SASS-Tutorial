@@ -17,7 +17,9 @@
         height: 95vh
     }
 
-    @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) { //dpi = dot per inch, 192 is the apple retina screen, if resolution is higher than 192 load bigger image AND width is larger than 600
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), 
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), 
+        only screen and (min-width: 125em) { //dpi = dot per inch, 192 is the apple retina screen, if resolution is higher than 192 load bigger image AND width is larger than 600
         background-image: linear-gradient(
         to right bottom, 
         rgba($color-primary-light, 0.8), 

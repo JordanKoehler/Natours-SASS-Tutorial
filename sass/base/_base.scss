@@ -32,3 +32,8 @@ body {
         padding: 0;
     }
 }
+
+::selection { //for when a user selects text, now has a personal touch
+    background-color: $color-primary;
+    color: $color-white;
+}

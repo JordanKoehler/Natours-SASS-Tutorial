@@ -155,7 +155,10 @@
 
     ///MEDIA QUERY
 
-    @include respond(tab-port) {
+   // @include respond(tab-port) {
+
+    @media only screen and (max-width: 56.25em),
+        only screen and (hover: none) { //this is to differentiate from devices that use touch
      height: auto;
      border-radius: 3px;
      background-color: $color-white;
