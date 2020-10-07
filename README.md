@@ -1,6 +1,6 @@
 # Natours
 
-Natours is a CSS Grid tutorial provided by Jonas Schmedtmann from his Udemy course 'Advanced CSS and Sass: Flexbox, Grid, Animations and more!
+Natours is a Sass SCSS tutorial provided by Jonas Schmedtmann from his Udemy course 'Advanced CSS and Sass: Flexbox, Grid, Animations and more!
 Check out the final project here! [Natours](https://natours-sass-project.vercel.app/)
 
 ## Installation
