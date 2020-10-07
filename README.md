@@ -1,3 +1,20 @@
-# Natour Website - SCSS Tutorial
-Design, images were provided by Jonas through his Udemy Course "Advanced CSS and Sass: Flexbox, Grid, Animations and More!". 
-Learning to use SCSS to create a nice landing page. 
+# Natours
+
+Natours is a CSS Grid tutorial provided by Jonas Schmedtmann from his Udemy course 'Advanced CSS and Sass: Flexbox, Grid, Animations and more!
+Check out the final project here! [Natours](https://natours-sass-project.vercel.app/)
+
+## Installation
+
+Use the package manager [npm](https://www.npmjs.com/) to install all packages used for this project.
+
+```bash
+npm install
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
